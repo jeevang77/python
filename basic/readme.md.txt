@@ -1,11 +1,11 @@
-# 📚 Basic Python Projects
+# 🧠 Python Projects – Basics
 
-These are beginner-friendly Python programs I created to practice core programming concepts.
+A collection of beginner-level Python projects I've built to sharpen my skills.
 
-## Projects Included
+## 🚀 Projects List
 
-1. **Age in Seconds**  
-   - Calculates how many seconds you've lived.
+### 1. Age in Seconds
+- Takes your age and shows how many seconds you've lived.
 
-2. **Palindrome Checker**  
-   - Checks if a word is the same forwards and backwards.
+### 3. Palindrome Checker
+- Checks if a word is a palindrome.
