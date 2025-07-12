@@ -2,7 +2,7 @@
 
 
 
-name = "mom"
+name =input("enter a name").lower()
 
 
 if name==name[::-1]:
