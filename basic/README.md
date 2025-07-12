@@ -12,3 +12,6 @@ These are beginner-friendly Python programs I created to practice core programmi
 
 3. **Mini Calculator**   
    - Takes two inputs and operator from users and perform desired operators 
+
+4. **Grade Calculator**
+   - takes input marks from user and calculate the grade of it
