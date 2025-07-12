@@ -24,3 +24,12 @@ These are beginner-friendly Python programs I created to practice core programmi
 
 7. **Leap Year**
    - check if the year is leap year or not from user input
+
+8. **printing numbers by loops**
+   -  printing numbers from 1 to n using while and for loops
+   -  printing sum of n natural numbers using for and while loops
+   -  printing factorial of a number using while and for loops
+   -  printing even numbers using while and for loops
+   -  printing odd numbers using while and for loops
+   -  printing tabulous form using while and for loops
+
