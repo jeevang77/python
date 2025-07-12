@@ -1,8 +1,8 @@
-# 📚 Basic Python Projects
+# 📚 Basic Python Practice Problems
 
 These are beginner-friendly Python programs I created to practice core programming concepts.
 
-## Projects Included
+## Problems Included
 
 1. **Age in Seconds**  
    - Calculates how many seconds you've lived.
@@ -18,3 +18,9 @@ These are beginner-friendly Python programs I created to practice core programmi
 
 5. **Grade Calculator**
    - Takes input marks from user and calculate the grade of it
+
+6. **Greatest Number**
+   - takes input of numbers and print the greatest number
+
+7. **Leap Year**
+   - check if the year is leap year or not from user input
