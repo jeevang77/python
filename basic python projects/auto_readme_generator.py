@@ -25,7 +25,7 @@ descriptions = {
     "weight converter.py": "Converts weight between kg and lbs.",
     "mini calculator.py": "Performs basic arithmetic operations.",
     "shopping cart.py": "takes input of name and prices from user and give's a shooping list and total price.",
-    "concession_stand_program": "shows menu of the concession stand and adds food to your cart and prints the total price of the food."
+    "concession_stand_program.py": "shows menu of the concession stand and adds food to your cart and prints the total price of the food."
 }
 
 def generate_readme():
