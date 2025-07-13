@@ -21,7 +21,7 @@ This folder contains a collection of beginner-friendly Python mini projects desi
 descriptions = {
     "compound_interest_calculator.py": "Calculates compound interest with user input.",
     "madlibs_game.py": "A fun Mad Libs word game.",
-    "temperature_conersion_program.py": "Converts between Celsius and Fahrenheit.",
+    "temperature_conversion_program.py": "Converts between Celsius and Fahrenheit.",
     "weight converter.py": "Converts weight between kg and lbs.",
     "mini calculator.py": "Performs basic arithmetic operations."
 }
