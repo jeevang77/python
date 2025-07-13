@@ -23,7 +23,9 @@ print("----------------------YOUR CART-------------------------")
 
 
 my_dict = dict(zip(foods,prices))
-print(my_dict)
+
+for food,price in my_dict.items() :
+    print(f"{food}: {price}")
 
 for price in prices :
     total_price += price
