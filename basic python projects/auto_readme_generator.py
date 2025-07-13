@@ -1,0 +1,55 @@
+import os
+
+# Folder where script is run
+FOLDER = os.path.dirname(os.path.abspath(__file__))
+README_FILE = os.path.join(FOLDER, 'README.md')
+
+# Header content
+header = """# 🐍 Basic Python Projects
+
+This folder contains a collection of beginner-friendly Python mini projects designed to reinforce your core programming skills.
+
+---
+
+## 📁 Projects Included
+
+| File Name               | Description                            |
+|-------------------------|----------------------------------------|
+"""
+
+# Descriptions dictionary
+descriptions = {
+    "compound_interest.py": "Calculates compound interest with user input.",
+    "madlibs_game.py": "A fun Mad Libs word game.",
+    "temperature_converter.py": "Converts between Celsius and Fahrenheit.",
+    "weight_converter.py": "Converts weight between kg and lbs.",
+    "mini_calculator.py": "Performs basic arithmetic operations."
+}
+
+def generate_readme():
+    # Start content
+    content = header
+
+    # List and sort .py files (ignore this generator script)
+    py_files = [f for f in os.listdir(FOLDER) if f.endswith('.py') and f != os.path.basename(__file__)]
+    py_files.sort()
+
+    if not py_files:
+        print("⚠️ No Python files found.")
+        return
+
+    for file in py_files:
+        desc = descriptions.get(file, "🚧 Description pending...")
+        content += f"| `{file}` | {desc} |\n"
+
+    # Footer note
+    content += "\n---\n\n✅ This README was auto-generated using `auto_readme_generator.py`.\n"
+
+    # Write to README.md
+    with open(README_FILE, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+    print(f"✅ README.md successfully updated with {len(py_files)} files.")
+
+if __name__ == "__main__":
+    generate_readme()
