@@ -23,7 +23,8 @@ descriptions = {
     "madlibs_game.py": "A fun Mad Libs word game.",
     "temperature_conversion_program.py": "Converts between Celsius and Fahrenheit.",
     "weight converter.py": "Converts weight between kg and lbs.",
-    "mini calculator.py": "Performs basic arithmetic operations."
+    "mini calculator.py": "Performs basic arithmetic operations.",
+    "shopping cart.py": "takes input of name and prices from user and give's a shooping list and total price."
 }
 
 def generate_readme():
