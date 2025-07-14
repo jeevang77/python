@@ -25,8 +25,10 @@ while True :
     food = input("enter the name of the food (q to quit): ").title()
     if food.lower() == "q" :
         break
-    elif menu.get(food) is not None :
+    elif food in menu :
         cart.append(food)
+    else:
+        print("your order is not in menu ")
         
 print("--------------------YOUR ORDER-----------------")
 
