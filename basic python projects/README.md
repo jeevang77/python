@@ -12,6 +12,7 @@ This folder contains a collection of beginner-friendly Python mini projects desi
 | `concession_stand_program.py` | shows menu of the concession stand and adds food to your cart and prints the total price of the food. |
 | `madlibs_game.py` | A fun Mad Libs word game. |
 | `mini calculator.py` | Performs basic arithmetic operations. |
+| `number_guessing_game.py` |  user can play by guessing numbers between numbers 1 to 100 until he guess the correct number. |
 | `shopping cart.py` | takes input of name and prices from user and give's a shooping list and total price. |
 | `temperature_conversion_program.py` | Converts between Celsius and Fahrenheit. |
 | `weight converter.py` | Converts weight between kg and lbs. |
