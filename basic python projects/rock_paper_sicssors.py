@@ -18,9 +18,12 @@ while running :
     computer = random.choice(options)
     player = None
 
-    while player not in options:
+    while True:
         player = input("enter a choice (rock , paper, scissors): ").lower()
-        
+        if player in options :
+            break
+        else :
+            print("invalid input!, please enter rock or paper or scissor")
         
     print(f"player choice : {player}")
     print(f"computer choice : {computer}")
