@@ -26,7 +26,8 @@ descriptions = {
     "mini calculator.py": "Performs basic arithmetic operations.",
     "shopping cart.py": "takes input of name and prices from user and give's a shooping list and total price.",
     "concession_stand_program.py": "shows menu of the concession stand and adds food to your cart and prints the total price of the food.",
-    "number_guessing_game.py": " user can play by guessing numbers between numbers 1 to 100 until he guess the correct number."
+    "number_guessing_game.py": " user can play by guessing numbers between numbers 1 to 100 until he guess the correct number.",
+    "rock_paper_sicssors.py": "play rock paper scissors game test your scores its fun!"
 }
 
 def generate_readme():
