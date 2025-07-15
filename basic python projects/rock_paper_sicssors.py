@@ -52,7 +52,7 @@ while running :
      
     play_again = input("you want to play again (yes or no): ").lower()
     if play_again == "yes" :
-        continue
+        break
     else :
         running = False
 
