@@ -8,6 +8,7 @@ This folder contains a collection of beginner-friendly Python mini projects desi
 
 | File Name               | Description                            |
 |-------------------------|----------------------------------------|
+| `banking_program.py` | simple banking program to check balance , deposit money and withdraw it. |
 | `compound_interest_calculator.py` | Calculates compound interest with user input. |
 | `concession_stand_program.py` | shows menu of the concession stand and adds food to your cart and prints the total price of the food. |
 | `madlibs_game.py` | A fun Mad Libs word game. |
