@@ -45,7 +45,7 @@ while chatting :
         chatting = False
 
     else :
-        print("i dont understand this ")
+        print("i dont understand this, i'm learning ")
 
     
                
