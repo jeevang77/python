@@ -10,22 +10,30 @@ import random
 import yfinance as yf
 
 
+# Keywords for different functionalities
+# These keywords will be used to identify the user's intent from their speech input
+
+search_keywords = ["search for","look for","google","what is","how to","tell me about","can you","please","look up for","the definition of","for me"]
+youtube_keywords = ["search for", "on youtube", "in youtube","play","video",'watch',"i would like to","can you","please","open the","for me"]
+map_keywords = ["find the location of","search for","search the location of","the location of","what's","where is","show me"]
+exit_keywords = ["exit", "quit", "see you", "see ya", "see you later", "goodbye", "bye","talk to you later", "catch you later", "thanks, bye",]
+stock_price_keywords = ["tell me the","stock","share", "current","price of", "current share price","what's the"]
 
 
 r = sr.Recognizer()
 
 person_name = ""
 
-search_keywords = ["search for","look for","google","what is","how to","tell me about","can you","please","look up for"]
-youtube_keywords = ["search for", "on youtube", "in youtube","play","video",'watch',"i would like to","can you","please"]
-map_keywords = ["find the location of","search the location of","the location of","what's"]
-exit_keywords = ["exit", "quit", "see you", "see ya", "see you later", "goodbye", "bye","talk to you later", "catch you later", "thanks, bye",]
-stock_price_keywords = ["tell me the","stock","share", "current","price of", "current share price","what's the"]
-
-
 def listen_to_user():
     with sr.Microphone() as source:
-        audio = r.listen(source)
+        r.pause_threshold = 0.6        # Allows brief pauses while talking
+        r.dynamic_energy_threshold = False
+        r.energy_threshold = 500       # Adjust if background noise is high
+        r.adjust_for_ambient_noise(source, duration=1)
+
+        print("Listening...")
+        audio = r.listen(source, timeout=None, phrase_time_limit=None)
+        print("Processing...")
         prompt = ""
         print(prompt)
         try:
@@ -61,13 +69,13 @@ def respond(prompt):
         else:
             spidey_speak("hey there, good to see you here, how can i help you")
 
-    elif prompt in ["what is your name", "your name", "who are you", 'name']:
+    elif prompt in ["what is your name", "your name", "who are you", 'name',"what's your name"]:
         if person_name:
             spidey_speak(f"my name is spidey, {person_name}")
         else:
             spidey_speak("my name is spidey,may i know your name?")
 
-    elif prompt in ["time", "what time is it", "what's the time now"]:
+    elif prompt in ["time", "what time is it", "what's the time now","what's the time"]:
         if person_name:
             spidey_speak(f"the current time is {time.ctime()}, {person_name}")
         else:
@@ -89,7 +97,7 @@ def respond(prompt):
         webbrowser.get().open(url)
         spidey_speak(f"here is what i found for {search_term} on google")
 
-    elif any(word in prompt for word in youtube_keywords) and "youtube" in prompt:
+    elif any(word in prompt for word in youtube_keywords) and "youtube" in prompt or "video" in prompt or "watch" in prompt :
         search_term =prompt
         for word in youtube_keywords :
                 search_term = search_term.replace(word,"").strip()
